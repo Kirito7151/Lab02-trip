@@ -2,7 +2,7 @@
 using System.Numerics;
 using System.Reflection.Metadata;
 /*
-* Name: Your Full Name
+* Name: Jonathan Parkhurst
 * Course: CSCI 1250, Section 001
 * Assignment: Lab 02, Trip Calculator
 * Date: September 22, 2026
@@ -93,3 +93,16 @@ System.Console.WriteLine("Trip Total: "  + triptotal.ToString("F2"));
 System.Console.WriteLine("Cost Per Person: " + costperperson.ToString("F2"));
 System.Console.WriteLine("Take Home Pay Per Hour: " + takehomepayperhour.ToString("F2"));
 System.Console.WriteLine("Hours you must work to cover your share: " +hoursmustwork.ToString("C"));
+
+Console.WriteLine("=== Part 1: Road Trip ===");
+Console.WriteLine("Round Trip Miles: " + milesofthetrip.ToString("F2"));
+Console.WriteLine("Mile Per Gallon: " + milesPerGallon.ToString("F2"));
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripCalculator", "TripCalculator\TripCalculator.csproj", "{6385ADD7-F4C8-4A6E-A304-3C8B9D5C8F67}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab04-group-trip", "lab04-group-trip", "{2AA65DDA-424C-3CA8-27EA-C6C25067349D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grouptrip", "lab04-group-trip\Grouptrip\Grouptrip.csproj", "{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,23 @@ Global
 		{6385ADD7-F4C8-4A6E-A304-3C8B9D5C8F67}.Release|x64.Build.0 = Release|Any CPU
 		{6385ADD7-F4C8-4A6E-A304-3C8B9D5C8F67}.Release|x86.ActiveCfg = Release|Any CPU
 		{6385ADD7-F4C8-4A6E-A304-3C8B9D5C8F67}.Release|x86.Build.0 = Release|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Debug|x64.Build.0 = Debug|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Debug|x86.Build.0 = Debug|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Release|x64.ActiveCfg = Release|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Release|x64.Build.0 = Release|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Release|x86.ActiveCfg = Release|Any CPU
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CCA1E961-C7C0-465A-B73A-EAD32CFFC133} = {2AA65DDA-424C-3CA8-27EA-C6C25067349D}
 	EndGlobalSection
 EndGlobal

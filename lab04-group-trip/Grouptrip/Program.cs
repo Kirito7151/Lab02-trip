@@ -33,6 +33,7 @@ System.Console.WriteLine("Fuel cost: " + fuelCost.ToString("C"));
 
 //
 
+System.Console.Write("How many people are going on the trip? ");
 int Peoplegoing = Convert.ToInt32(Console.ReadLine());
 
 System.Console.Write("How many Pizza are needed? ");

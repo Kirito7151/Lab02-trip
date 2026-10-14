@@ -4,9 +4,10 @@ using System.Reflection.Metadata;
 /*
 * Name: Jonathan Parkhurst
 * Course: CSCI 1250, Section 001
-* Assignment: Lab 02, Trip Calculator
-* Date: September 22, 2026
-* Description: Calculates the fuel, food, and work hours behind one road trip.
+* Assignment: Lab 04, The Group trip
+* Date: October 7, 2026
+* Description: Rebuilds the trip calculator with methods and arrays so it
+reports on a whole group instead of one person
 */
 
 Console.Write("What was is the Round Trip in miles? ");
@@ -125,3 +126,26 @@ Console.WriteLine("Cost per person: " + costperperson.ToString("C"));
 Console.WriteLine("Take home pay per hour: " + takehomepayperhour.ToString("C"));
 Console.WriteLine("Hours you must work to cover your share: " + hoursmustwork.ToString("F2"));
 Console.WriteLine("");
+
+//
+//
+static double Fuel(double miles, double milesPerGallon, double pricePerGallon)
+{
+    double gallons = miles / milesPerGallon;
+    return gallons * pricePerGallon;
+}
+double fuel = FuelCost(260, 28, 2.89);
+
+static double FuelCost(double milesofthetrip, double milesPerGallon, double pricePerGallon)
+{
+    return (milesofthetrip / milesPerGallon) * pricePerGallon;
+}
+static double TakeHomePay(double Hoursworked, double hourlyRate, double tax)
+{
+    return(Hoursworked * hourlyRate) *  (1.0 - tax);
+}
+static double HoursToCover(double takehome, double takehomepayperhour)
+{
+    return (takehome / takehomepayperhour);
+}
+

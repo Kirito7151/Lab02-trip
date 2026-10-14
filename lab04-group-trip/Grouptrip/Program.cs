@@ -4,10 +4,9 @@ using System.Reflection.Metadata;
 /*
 * Name: Jonathan Parkhurst
 * Course: CSCI 1250, Section 001
-* Assignment: Lab 04, The Group trip
-* Date: October 7, 2026
-* Description: Rebuilds the trip calculator with methods and arrays so it
-reports on a whole group instead of one person
+* Assignment: Lab 02, Trip Calculator
+* Date: September 22, 2026
+* Description: Calculates the fuel, food, and work hours behind one road trip.
 */
 
 //Part One: The Trip
@@ -17,14 +16,14 @@ Console.WriteLine("=== Part 1: The Trip ===");
 
 //Questions
 Console.Write("How many pizzas: ");
-double numberPizzas = Convert.ToDouble(Console.ReadLine());
+double Pizzasneed = Convert.ToDouble(Console.ReadLine());
 
 Console.Write("Price per pizza: ");
 double pizzaPrice = Convert.ToDouble(Console.ReadLine());
 
 //Calculations
 double fuel = FuelCost(260, 28, 2.89);
-double pizzaCost = numberPizzas * pizzaPrice;
+double pizzaCost = Pizzasneed * pizzaPrice;
 double tripTotal = fuel + pizzaCost;
 
 //Print The Calculations
@@ -48,7 +47,7 @@ double[] hoursWorked = { 22, 15, 30, 18 };
 double[] hourlyRates = { 13.50, 16.00, 11.20, 14.80 };
 
 //Calculations
-double totalSlices = numberPizzas * pizzaSlices;
+double totalSlices = Pizzasneed * pizzaSlices;
 double personSlices = totalSlices / names.Length;
 double costPerPerson = tripTotal / names.Length;
 //Print The Calculations

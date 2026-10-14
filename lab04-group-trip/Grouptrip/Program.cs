@@ -17,14 +17,13 @@ Console.Write("What is the miles per gallon that the car can go? ");
 int milesPerGallon = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("What is the price of gas per gallon? ");
-double pricePerGallon = Convert.ToDouble(Console.ReadLine());
+double gasprice = Convert.ToDouble(Console.ReadLine());
 
 //do the math
 
 double gallonsNeeded = milesofthetrip / (double)milesPerGallon;
 
-double fuelCost = gallonsNeeded * pricePerGallon;
-
+double fuelCost = gallonsNeeded * gasprice;
 
 // do the output
 
@@ -32,7 +31,6 @@ System.Console.WriteLine("Gallons needed: " + gallonsNeeded.ToString ("F2"));
 System.Console.WriteLine("Fuel cost: " + fuelCost.ToString("C"));
 
 //
-
 System.Console.Write("How many people are going on the trip? ");
 int Peoplegoing = Convert.ToInt32(Console.ReadLine());
 
@@ -58,9 +56,10 @@ System.Console.WriteLine("Pizza Cost: " + pizzacost.ToString ("C"));
 
 //
 
+System.Console.Write("How many hours did you work this week? ");
 int Hoursworked = Convert.ToInt32(Console.ReadLine());
 
-
+System.Console.Write("What is your hourly pay? ");
 double hourlyrate = Convert.ToDouble(Console.ReadLine());
 
 const double tax = .18;
@@ -89,7 +88,6 @@ double takehomepayperhour = takehome / Hoursworked;
 
 double hoursmustwork = costperperson /takehomepayperhour;
 
-
 //do the output
 
 System.Console.WriteLine("Trip Total: "  + triptotal.ToString("F2"));
@@ -100,7 +98,7 @@ System.Console.WriteLine("Hours you must work to cover your share: " +hoursmustw
 Console.WriteLine("=== Part 1: Road Trip ===");
 Console.WriteLine("Round Trip Miles: " + milesofthetrip.ToString("F2"));
 Console.WriteLine("Mile Per Gallon: " + milesPerGallon.ToString("F2"));
-Console.WriteLine("Price Per Gallon: " + pricePerGallon.ToString("C"));
+Console.WriteLine("Price Per Gallon: " + gasprice.ToString("C"));
 Console.WriteLine("");
 Console.WriteLine("Gallons needed: " +gallonsNeeded.ToString("F2"));
 Console.WriteLine("Fuel Cost: " + fuelCost.ToString("C"));
